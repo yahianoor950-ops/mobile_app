@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+:root {
+    --body-bg: #dadada;
+    --secondary-bg: #FFFFFF;
+    --text-color: #64748B;
+    --head-color: #1E293B;
+    --bg-button: #0F766E;
+    --bg-hover: #115E59;
+    --box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
+}
+html{
+    direction: rtl;
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--head-color)
+}
+body{
+    color: var(--text-color);
+    background-color: var(var(--body-bg));
+}
+body .container{
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+p.par{
+    margin: 20px 0;
+}
+.add{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--bg-button);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.card{
+    margin: 15px 0;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.card .ok{
+    width: 50px;
+    padding: 2px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.one .ok,
+.two .ok{
+    background-color: rgb(224, 119, 119);
+}
+.three .ok,
+.four .ok{
+    background-color: var(--bg-button);
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: var(--bg-button);
+    padding: 20px;
+}
+ul li a{
+    color: #fff;
+    font-size: 14px;
+}
+ul li:nth-child(4) a{
+    color: var(--head-color);
+}

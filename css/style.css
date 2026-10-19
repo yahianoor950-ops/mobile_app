@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+:root {
+    --body-bg: #dadada;
+    --secondary-bg: #FFFFFF;
+    --text-color: #64748B;
+    --head-color: #1E293B;
+    --bg-button: #0F766E;
+    --bg-hover: #115E59;
+    --box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
+}
+html{
+    direction: rtl;
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--head-color)
+}
+body{
+    color: var(--text-color);
+    background-color: var(var(--body-bg));
+}
+body .container{
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+p.notification{
+    padding: 5px;
+    color: #fff;
+    background-color: rgb(161, 62, 62);
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+h3{
+    margin: 12px 0;
+}
+.card{
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #eee;
+}
+.lectures_cards .side_card{
+    text-align: center;
+}
+.assign_cards .done{
+    background-color: var(--bg-button);
+    color: var(--secondary-bg);
+    padding: 3px;
+    font-size: 12px;
+    width: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+.lectures{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #eee;
+    text-align: center;
+    margin: 20px 0 30px ;
+    color: var(--head-color);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: var(--bg-button);
+    padding: 20px;
+}
+ul li a{
+    color: #fff;
+    font-size: 14px;
+}
+ul li:first-child a{
+    color: var(--head-color)
+}

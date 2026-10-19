@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+:root {
+    --body-bg: #dadada;
+    --secondary-bg: #FFFFFF;
+    --text-color: #64748B;
+    --head-color: #1E293B;
+    --bg-button: #0F766E;
+    --bg-hover: #115E59;
+    --box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
+}
+html{
+    direction: rtl;
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--head-color)
+}
+body{
+    color: var(--text-color);
+    background-color: var(var(--body-bg));
+}
+body .container{
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+}
+.card{
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    border: 1px solid #eee;
+    margin: 12px 0;
+    border-radius: 10px;
+}
+.card .up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card .prog{
+    width: 100%;
+    height: 4px;
+    margin: 10px 0;
+    background-color: #ccc;
+    border-radius: 4px;
+    position: relative;
+}
+.card .prog::before{
+    content: "";
+    position: absolute;
+    width: var(--width);
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+.card:nth-of-type(1) .prog::before,
+.card:nth-of-type(3) .prog::before{
+    background-color: var(--bg-button);
+}
+.card:nth-of-type(4) .prog::before,
+.card:nth-of-type(5) .prog::before{
+    background-color: rgb(232, 78, 78);
+}
+.card:nth-of-type(2) .prog::before{
+    background-color: rgb(242, 188, 89)
+}
+.card .end{
+    margin: 20px 0 0;
+    text-align: center;
+    padding: 5px 0;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: var(--bg-button);
+    padding: 20px;
+}
+ul li a{
+    color: #fff;
+    font-size: 14px;
+}
+ul li:nth-child(3) a{
+    color: var(--head-color);
+}
